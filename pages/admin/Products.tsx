@@ -1,7 +1,6 @@
 import React from 'react';
 import { PRODUCTS } from '../../constants';
 import { Edit, Trash2, Plus } from 'lucide-react';
-import FadeIn from '../../components/FadeIn';
 
 const Products: React.FC = () => {
   return (
