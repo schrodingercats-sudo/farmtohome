@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
+import FadeIn from './FadeIn';
 
 const BigCTA: React.FC = () => {
   return (
@@ -22,16 +23,18 @@ const BigCTA: React.FC = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 md:px-6">
-        <div className="flex flex-col">
-            {/* Giant Outline Text */}
-            <h2 className="font-display text-[15vw] font-bold text-transparent stroke-text-white leading-[0.8] tracking-tighter select-none opacity-80">
-              SUPPORT
-            </h2>
-            {/* Filled White Text Overlapping */}
-            <h2 className="font-display text-[15vw] font-bold text-white leading-[0.8] tracking-tighter relative z-10 pl-[4vw] -mt-[4vw] md:-mt-[2vw]">
-              LOCAL
-            </h2>
-        </div>
+        <FadeIn direction="up">
+          <div className="flex flex-col">
+              {/* Giant Outline Text */}
+              <h2 className="font-display text-[15vw] font-bold text-transparent stroke-text-white leading-[0.8] tracking-tighter select-none opacity-80">
+                SUPPORT
+              </h2>
+              {/* Filled White Text Overlapping */}
+              <h2 className="font-display text-[15vw] font-bold text-white leading-[0.8] tracking-tighter relative z-10 pl-[4vw] -mt-[4vw] md:-mt-[2vw]">
+                LOCAL
+              </h2>
+          </div>
+        </FadeIn>
       </div>
       
       <style>{`

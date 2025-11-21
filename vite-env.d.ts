@@ -1,16 +1,26 @@
-declare module '*.svg' {
-  import * as React from 'react';
-  export const ReactComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string }>;
-  const src: string;
-  export default src;
-}
+/// <reference types="vite/client" />
+import React from 'react';
 
-declare module '*.jpg';
-declare module '*.png';
-declare module '*.jpeg';
-declare module '*.gif';
-declare module '*.bmp';
-declare module '*.tiff';
-declare module '*.webp';
-declare module '*.avif';
-declare module '*.json';
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'model-viewer': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+        src?: string;
+        alt?: string;
+        ar?: boolean;
+        'ar-modes'?: string;
+        'camera-controls'?: boolean;
+        'tone-mapping'?: string;
+        poster?: string;
+        'shadow-intensity'?: string;
+        autoplay?: boolean;
+        'camera-orbit'?: string;
+        'field-of-view'?: string;
+        'interaction-prompt'?: string;
+        style?: React.CSSProperties;
+        slot?: string;
+        [key: string]: any;
+      };
+    }
+  }
+}

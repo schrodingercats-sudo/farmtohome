@@ -1,10 +1,11 @@
 import React from 'react';
 import { Facebook, Instagram, Twitter, Globe } from 'lucide-react';
 import { HERO_TAGS } from '../constants';
+import { RevealText } from './ui/reveal-text';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen w-full overflow-hidden flex flex-col justify-center pt-20 md:pt-0">
+    <section className="relative min-h-screen w-full overflow-hidden flex flex-col justify-center pt-48 md:pt-48 lg:pt-48">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         {/* Professional farm produce image */}
@@ -21,12 +22,21 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10 h-full flex flex-col justify-center py-12 md:py-0">
         
         {/* Main Content */}
-        <div className="w-full mt-10 md:mt-0">
-          {/* Headline overlaps image - Giant White Text */}
-          <h1 className="font-display text-[14vw] md:text-[13vw] leading-[0.85] font-bold uppercase tracking-tighter text-white mb-6 md:mb-8 drop-shadow-xl lg:mix-blend-overlay break-words">
-            Farm To <br/>
-            Family
-          </h1>
+        <div className="w-full mt-8 md:mt-0">
+          {/* Headline with Reveal Effect */}
+          <div className="mb-6 md:mb-8">
+            <RevealText 
+              text="FARM TO" 
+              fontSize="text-[14vw] md:text-[10vw] lg:text-[9vw] leading-[0.85]" 
+              className="font-display font-bold uppercase tracking-tighter drop-shadow-xl lg:mix-blend-overlay"
+            />
+            <RevealText 
+              text="FAMILY" 
+              fontSize="text-[14vw] md:text-[10vw] lg:text-[9vw] leading-[0.85]" 
+              className="font-display font-bold uppercase tracking-tighter drop-shadow-xl lg:mix-blend-overlay"
+              letterDelay={0.1}
+            />
+          </div>
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 md:gap-12 pl-1 md:pl-2">
             
