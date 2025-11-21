@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBx5-nmUmpa_13JtGXU1mByuBrll-Z-DUA",
-  authDomain: "farmtofamily-ap.firebaseapp.com",
-  projectId: "farmtofamily-ap",
-  storageBucket: "farmtofamily-ap.firebasestorage.app",
-  messagingSenderId: "1023841991055",
-  appId: "1:1023841991055:web:5e1432c3b9f396df41f3fa",
-  measurementId: "G-YVBD1J4VXN"
+  apiKey: "AIzaSyB3BOQVJqsg7-HXgVT4sn69PQwkjlQu9PU",
+  authDomain: "farm-to-home-8df9f.firebaseapp.com",
+  projectId: "farm-to-home-8df9f",
+  storageBucket: "farm-to-home-8df9f.firebasestorage.app",
+  messagingSenderId: "876500045636",
+  appId: "1:876500045636:web:011bfaee92d6f371941111",
+  measurementId: "G-PEQLT04DC0"
 };
 
 // Initialize Firebase
@@ -17,3 +17,4 @@ const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
 export { auth, googleProvider };
+
