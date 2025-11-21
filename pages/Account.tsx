@@ -106,7 +106,7 @@ const Account: React.FC = () => {
               <p className="text-forest-900/60">Manage your orders and account details.</p>
             </div>
             <div className="flex items-center gap-4 bg-white p-2 pr-6 rounded-full shadow-sm">
-              <img src={user.avatar} alt={user.name} className="w-12 h-12 rounded-full border-2 border-[#37E266]" />
+              <img src={user.avatar ?? undefined} alt={user.name} className="w-12 h-12 rounded-full border-2 border-[#37E266]" />
               <div>
                 <p className="font-bold text-forest-900 text-sm">{user.name}</p>
                 <p className="text-forest-900/40 text-xs">{user.email}</p>
