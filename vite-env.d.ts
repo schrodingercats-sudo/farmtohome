@@ -1,5 +1,6 @@
 /// <reference types="vite/client" />
-import React from 'react';
+
+import * as React from 'react';
 
 declare global {
   namespace JSX {
@@ -7,18 +8,15 @@ declare global {
       'model-viewer': React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
         src?: string;
         alt?: string;
+        poster?: string;
         ar?: boolean;
         'ar-modes'?: string;
-        'camera-controls'?: boolean;
         'tone-mapping'?: string;
-        poster?: string;
-        'shadow-intensity'?: string;
+        'shadow-intensity'?: string | number;
         autoplay?: boolean;
         'camera-orbit'?: string;
         'field-of-view'?: string;
         'interaction-prompt'?: string;
-        style?: React.CSSProperties;
-        slot?: string;
         [key: string]: any;
       };
     }
